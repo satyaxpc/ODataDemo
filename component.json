@@ -28,18 +28,6 @@
       "title": "Get Account Information"
 
     }
-  },
-  "actions": {
-    "createInovice": {
-      "main": "./lib/actions/createCaliberInvoice.js",
-      "title": "Create Caliber Invoice",
-      "model": "InvoiceDetails",
-      "metadata": {
-        "in": "./lib/schemas/Invoice/createInvoice.in.json",
-        "out": "./lib/schemas/Invoice/createInvoice.out.json"
-      }
-    }
   }
-  
 }
 
