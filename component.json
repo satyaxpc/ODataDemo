@@ -6,17 +6,17 @@
 		"fields": {
 			"username": {
 				"label": "User Name",
-				"required": false,
+				"required": true,
 				"viewClass": "TextFieldWithNoteView"
 			},
 			"password": {
 				"label": "Password",
-				"required": false,
+				"required": true,
 				"viewClass": "TextFieldWithNoteView"
 			},
 			"endPointURL": {
 				"label": "End Point URL",
-				"required": false,
+				"required": true,
         "viewClass": "TextFieldWithNoteView"
       }
 		}
