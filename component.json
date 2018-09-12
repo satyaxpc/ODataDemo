@@ -6,17 +6,17 @@
 		"fields": {
 			"username": {
 				"label": "User Name",
-				"required": true,
+				"required": false,
 				"viewClass": "TextFieldWithNoteView"
 			},
 			"password": {
 				"label": "Password",
-				"required": true,
+				"required": false,
 				"viewClass": "TextFieldWithNoteView"
 			},
 			"endPointURL": {
 				"label": "End Point URL",
-				"required": true,
+				"required": false,
         "viewClass": "TextFieldWithNoteView"
       }
 		}
@@ -26,7 +26,6 @@
       "main": "./lib/triggers/getAccountiInfo.js",
       "type": "polling",
       "title": "Get Account Information"
-
     }
   }
 }
