@@ -1,31 +1,29 @@
 {
 	"title": "XPC Demo",
-	"description": "magicsoftware component for the Caliber",
+	"description": "magicsoftware component for the Demo",
 	"docsUrl": "",
 	"credentials": {
 		"fields": {
-			"username": {
-				"label": "User Name",
+			"api_key": {
+				"label": "API Key",
 				"required": true,
 				"viewClass": "TextFieldWithNoteView"
 			},
-			"password": {
-				"label": "Password",
-				"required": true,
-				"viewClass": "TextFieldWithNoteView"
-			},
-			"endPointURL": {
+			"endPointUrl": {
 				"label": "End Point URL",
 				"required": true,
-        "viewClass": "TextFieldWithNoteView"
-      }
+				"viewClass": "TextFieldWithNoteView"
+			}
 		}
 	},
-  "triggers": {
-    "getAccountiInfo": {
-      "main": "./lib/triggers/getAccountiInfo.js",
-      "type": "polling",
-      "title": "Get Account Information"
+  "actions": {
+    "createContact": {
+      "main": "./lib/actions/createContact.js",
+      "title": "Create Contact",
+      "metadata": {
+        "in": "./lib/schemas/createContact.in.json",
+        "out": "./lib/schemas/createContact.out.json"
+      }
     }
   }
 }
