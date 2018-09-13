@@ -3,10 +3,7 @@ const contactService = require('../ODataDemo/lib/commons/services/contactService
 exports.process = processTrigger;
 
 async function processTrigger(cfg){
-    
-    var contactDetail = await contactService.retrieveContact(cfg);
-
-    console.log('Contact Data '+ JSON.stringify(contactDetail));
+    await contactService.retrieveContact(cfg);
 }
 
 processTrigger({endPointUrl : 'https://api.constantcontact.com', api_key : 'zkh6y8tat9b8pa7ypcza6kv9'});

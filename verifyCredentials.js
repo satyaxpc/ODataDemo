@@ -11,5 +11,3 @@ const accountService = require("./lib/commons/services/accountService.js");
 async function verify(credentials) {
     return await accountService.login(credentials);
 }
-
-
