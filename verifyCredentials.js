@@ -9,6 +9,5 @@ const accountService = require("./lib/commons/services/accountService.js");
  * @returns Promise sending HTTP request and resolving its response
  */
 async function verify(credentials) {
-    console.log('Credentials '+ credentials.endPointUrl);
     return await accountService.login(credentials);
 }
