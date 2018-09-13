@@ -12,6 +12,9 @@ module.exports = verify;
       return true;
     }
     else{
-      return false;
+
+    throw  error("Invalid Credentials");
+    return false;
+    
     }
 }
