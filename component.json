@@ -18,7 +18,7 @@
 	},
 	"triggers": {
     "retriveContactCollection": {
-      "main": "./lib/triggers/retriveContactCollection.js",
+      "main": "./lib/triggers/retrieveContactCollection.js",
       "type": "polling",
       "title": "Get Contact Collection"
 		}
