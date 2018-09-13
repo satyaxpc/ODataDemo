@@ -9,6 +9,11 @@
 				"required": true,
 				"viewClass": "TextFieldWithNoteView"
 			},
+			"accessToken": {
+				"label": "Access Token",
+				"required": true,
+				"viewClass": "TextFieldWithNoteView"
+			},
 			"endPointUrl": {
 				"label": "End Point URL",
 				"required": true,

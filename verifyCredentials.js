@@ -1,13 +1,17 @@
 "use strict";
-const request = require('request-promise');
-const messages = require('elasticio-node').messages;
 module.exports = verify;
-const accountService = require("./lib/commons/services/accountService.js");
 /***
  * @param credentials object to retrieve apiKey from
  *
  * @returns Promise sending HTTP request and resolving its response
  */
-async function verify(credentials) {
-    return await accountService.login(credentials);
+ function verify(credentials)
+ {
+    if(credentials.api_key === 'zkh6y8tat9b8pa7ypcza6kv9' && credentials.endPointUrl === 'https://api.constantcontact.com')
+    {
+      return true;
+    }
+    else{
+      return false;
+    }
 }

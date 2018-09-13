@@ -1,6 +1,5 @@
 {
-    "definitions": {},
-    "type": "object",
+     "type": "object",
     "title": "The Root Schema",
     "required": [
       "name",
