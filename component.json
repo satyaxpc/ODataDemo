@@ -16,6 +16,13 @@
 			}
 		}
 	},
+	"triggers": {
+    "retriveContactCollection": {
+      "main": "./lib/triggers/retriveContactCollection.js",
+      "type": "polling",
+      "title": "Get Contact Collection"
+		}
+  },
   "actions": {
     "createContact": {
       "main": "./lib/actions/createContact.js",
